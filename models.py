@@ -14,4 +14,4 @@ class EField(models.Field):
 		return name, path, args, kwargs
     
 class receiveCalls(models.Model):
-	test_bet = EField(val = "hi,wor", default='hi')
+	test_bet = EField(val = "'hi','wor'", default='hi')
