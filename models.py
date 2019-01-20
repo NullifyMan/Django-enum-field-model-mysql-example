@@ -9,8 +9,6 @@ class EField(models.Field):
 		# kwargs['val'] = self.val
 
 	def db_type(self, connection):
-		# val = "ENUM(#)"
-		# val.replace("#", self.vals)
 		return 'ENUM(%s)' % self.val
 
 	def deconstruct(self):
